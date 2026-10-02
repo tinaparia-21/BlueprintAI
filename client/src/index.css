@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+  }
+}
+
+/* =========================================================
+   Blueprint AI - Architecture Visualization
+   React Flow UI
+   ========================================================= */
+
+
+/* Dark Architecture Controls */
+.blueprint-flow-controls {
+  background: rgba(15, 23, 42, 0.96) !important;
+  border: 1px solid #334155 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Individual control buttons */
+.blueprint-flow-controls button {
+  width: 38px !important;
+  height: 38px !important;
+  background: #0f172a !important;
+  color: #cbd5e1 !important;
+  border-bottom: 1px solid #334155 !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Control hover */
+.blueprint-flow-controls button:hover {
+  background: #1e293b !important;
+  color: #ffffff !important;
+}
+
+/* Control icons */
+.blueprint-flow-controls button svg {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Remove border from last control */
+.blueprint-flow-controls button:last-child {
+  border-bottom: none !important;
+}
+
+/* Architecture diagram background */
+.blueprint-architecture-flow {
+  background: #020617 !important;
+}
+
+/* React Flow background */
+.blueprint-architecture-flow .react-flow__background {
+  background: #020617 !important;
+}
+
+/* React Flow edges */
+.blueprint-architecture-flow .react-flow__edge-path {
+  stroke-linecap: round;
+}
+
+/* MiniMap */
+.blueprint-architecture-flow .react-flow__minimap {
+  background: #0f172a !important;
+  border: 1px solid #334155 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
